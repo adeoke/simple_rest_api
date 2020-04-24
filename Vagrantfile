@@ -30,5 +30,19 @@ Vagrant.configure("2") do |config|
     sudo pip3 install pipenv
     pip3 uninstall -y pipenv
     pip3 install pipenv
+    pip3 uninstall -y virtualenv
+    pip3 install virtualenv
+    pip3 uninstall -y appdirs
+    pip3 install appdirs
+    pip3 uninstall -y filelock
+    pip3 install filelock
+    pip3 uninstall -y importlib_metadata
+    pip3 install importlib_metadata
+    pip3 uninstall -y zipp
+    pip3 install zipp
+    pip3 uninstall -y distlib
+    pip3 install distlib
+    pip3 uninstall -y importlib_resources
+    pip3 install importlib_resources
   SHELL
 end

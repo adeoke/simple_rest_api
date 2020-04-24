@@ -14,6 +14,9 @@ https://www.virtualbox.org/
 Of course Git: 
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git.
 
+I shall be using Invoke to automate the boring stuff. See here for details:
+http://docs.pyinvoke.org/en/stable/index.html
+
 Also, for package management I'm using pipenv. See installation instructions here:
 https://pipenv-fork.readthedocs.io/en/latest/
 
@@ -27,5 +30,7 @@ on my physical machine I've decided to use Vagrant to sandbox my environment.
 Vagrant is really just an API for a hypervisor, the type 2 hypervisor of choice I'm using 
 is VirtualBox, why, well its free. You can use others if you want (hyperv, parallels, etc). 
 
-
+Just for reference, Vagrant, VirtualBox, Pipenv and Invoke can all be ignored, if you want.
+I use them just as it's my preferred way of working.
+ 
 Any further setup instructions will be included here as this project unfolds.

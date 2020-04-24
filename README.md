@@ -17,7 +17,7 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git.
 Also, for package management I'm using pipenv. See installation instructions here:
 https://pipenv-fork.readthedocs.io/en/latest/
 
-# What are the pre-requisites for?
+# What are the prerequisites for?
 Well, we need Python to interpret the code that we are writing, I'm not
 supporting legacy applications so I'm using a quite modern Python version.
  

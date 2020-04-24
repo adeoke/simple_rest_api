@@ -33,4 +33,38 @@ is VirtualBox, why, well its free. You can use others if you want (hyperv, paral
 Just for reference, Vagrant, VirtualBox, Pipenv and Invoke can all be ignored, if you want.
 I use them just as it's my preferred way of working.
  
+# Using pipenv in vagrant
+
+Firstly, setup initialise the vagrant environment from the current directory:
+
+`vagrant up`
+ 
+Will download the base Ubuntu image and then install the packages within the 
+shell section on top of that image.
+
+to verify that the image has all the required dependencies type:
+
+`vagrant ssh`
+
+This will log you into the the image, at which point you can verify the 
+installed applications etc. For example, you can try the following:
+
+`python --version` 
+
+the output should be similar to the following:
+
+`# => Python 3.6.9`
+
+To check pipenv type:
+
+`pipenv --version`
+
+you should see output similar to the following:
+
+`# => pipenv, version 2018.11.26`
+
+If you see this then you can assume that you are setup correctly.
+ 
 Any further setup instructions will be included here as this project unfolds.
+
+

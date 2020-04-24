@@ -19,30 +19,34 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", inline: <<-SHELL
     # disable auto updates with system ctl commands
-    systemctl disable apt-daily.service
-    systemctl disable apt-daily.timer
+    # systemctl disable apt-daily.service
+    # systemctl disable apt-daily.timer
 
     sudo apt update
     sudo apt upgrade
-    sudo apt install -y zip
-    sudo apt install -y python3-pip
-    pip3 --version
-    sudo pip3 install pipenv
-    pip3 uninstall -y pipenv
-    pip3 install pipenv
-    pip3 uninstall -y virtualenv
-    pip3 install virtualenv
-    pip3 uninstall -y appdirs
-    pip3 install appdirs
-    pip3 uninstall -y filelock
-    pip3 install filelock
-    pip3 uninstall -y importlib_metadata
-    pip3 install importlib_metadata
-    pip3 uninstall -y zipp
-    pip3 install zipp
-    pip3 uninstall -y distlib
-    pip3 install distlib
-    pip3 uninstall -y importlib_resources
-    pip3 install importlib_resources
+    # sudo apt install -y zip
+    # sudo apt install -y python3-pip
+    # pip3 --version
+    # sudo pip3 install pipenv
+    # pip3 uninstall -y pipenv
+    # pip3 install pipenv
+    # pip3 uninstall -y virtualenv
+    # pip3 install virtualenv
+    # pip3 uninstall -y appdirs
+    # pip3 install appdirs
+    # pip3 uninstall -y filelock
+    # pip3 install filelock
+    # pip3 uninstall -y importlib_metadata
+    # pip3 install importlib_metadata
+    # pip3 uninstall -y zipp
+    # pip3 install zipp
+    # pip3 uninstall -y distlib
+    # pip3 install distlib
+    # pip3 uninstall -y importlib_resources
+    # pip3 install importlib_resources
+    cd /vagrant 
+    pipenv shell 
+    pipenv install -r requirements.txt
+    pip3 install --upgrade pipenv --user
   SHELL
 end

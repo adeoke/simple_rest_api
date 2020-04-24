@@ -6,7 +6,9 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-invoke = "*"
+invoke = "==1.4.1"
+djangorestframework = "==3.9.2"
+Django = "==2.2"
 
 [requires]
 python_version = "3.6"

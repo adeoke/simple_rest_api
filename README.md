@@ -65,6 +65,36 @@ you should see output similar to the following:
 
 If you see this then you can assume that you are setup correctly.
  
+It is assumed that you cloned this repo and with that being the case, while within
+the vagrant guest to change to the project root you will need to do the following:
+
+`cd /vagrant` 
+
+at which point if you:
+
+`ls -al`
+
+You should see the contents of the cloned repo in that directory.
+It should be noted that the installation of the required libraries for this project
+are included in the requirements.txt file and also installed as part
+of the vagrant files provisioning steps.
+ 
+Now instal the dependencies listed in the requirements.txt file.
+Firsty, change to the pipenv shell:
+
+`pipenv shell`
+
+Once in the shell install the dependencies:
+`pipenv install -r requirements.txt`
+
+The installation process should begin.
+To confirm that you have been successful you can check the list of dependencies
+with command:
+
+`pipenv graph` 
+
+which should list the installed dependencies along with irs version.
+ 
 Any further setup instructions will be included here as this project unfolds.
 
 

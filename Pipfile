@@ -7,7 +7,7 @@ verify_ssl = true
 
 [packages]
 invoke = "==1.4.1"
-djangorestframework = "==3.9.2"
+djangorestframework = "==3.11.2"
 django = "==2.2.10"
 
 [requires]
